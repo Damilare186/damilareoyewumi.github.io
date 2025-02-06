@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyewumi Damilare - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            transition: background 0.5s, color 0.5s;
+        }
+        header {
+            background: linear-gradient(to right, #5d4037, #3e2723);
+            padding: 50px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            background: #222;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ffab91;
+        }
+        section {
+            padding: 60px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background: #222;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Oyewumi Damilare</h1>
+        <p>Software Engineer | Web Developer | Data Analyst</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Oyewumi Damilare, a dedicated Software Engineering student at Babcock University. My teamwork skills have been showcased in various school projects, where my team consistently ranked among the best. I also gained hands-on experience working as an IT Support Intern at Babcock University's ICT department.</p>
+        <p>My passion for programming fuels my ambition to become a top-tier software developer and data analyst, representing Nigeria on the global stage. Beyond coding, I enjoy watching movies, playing games, and reading.</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Database Management</li>
+            <li>MySQL, SQL</li>
+        </ul>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="IMG-20250205-WA0618.jpg" alt="Photo 1">
+            <img src="IMG-20250205-WA0616.jpg" alt="Photo 2">
+            <img src="IMG-20250205-WA0615.jpg" alt="Photo 3">
+            <img src="IMG-20250205-WA0617.jpg" alt="Photo 4">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: oyewumidamilare9@gmail.com</p>
+        <p>Phone: 07047749171</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/oyewumi-damilare-a322a22a4" style="color:#ffab91;">Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Oyewumi Damilare. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
